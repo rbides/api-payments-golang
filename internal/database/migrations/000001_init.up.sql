@@ -1,0 +1,11 @@
+CREATE TABLE transactions (
+  id VARCHAR(36) NOT NULL PRIMARY KEY,
+  user_id VARCHAR(36) NOT NULL,
+  asset_id VARCHAR(36) NOT NULL,
+  amount NUMERIC(15, 2) NOT NULL,
+  quantity INTEGER NOT NULL,
+  status VARCHAR(20) NOT NULL,
+  description VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP(3) NOT NULL
+);
